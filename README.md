@@ -7,8 +7,8 @@ Backend приложение для сайта "Приют для животны
    *(На устройстве должен быть установлен и запущен Docker)*
 
 ### Стек технологий:
+- Docker, Docker Compose
 - ASP.NET Core Web API
-- Docker (docker-compose)
 - Entity Framework Core
 - SQLite
 - MeditoR
@@ -25,6 +25,7 @@ Backend приложение для сайта "Приют для животны
 - Использование Fluent Validation для валидации запросов и формирования ошибок
 - Использование Swagger для документирования API
 - Реализация сервиса по сохранению изображений в Base64 на сервер
+- Обработка ошибок с помощью Custom Error Middleware
 
 ### Функционал Backend приложения (API):
 - Методы Get, Post, Delete для получение списка статуса животных
