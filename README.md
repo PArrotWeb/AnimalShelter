@@ -3,7 +3,7 @@ Backend приложение для сайта "Приют для животны
 
 ### Использование:
 1. Скачать docker-compose.yml
-2. Открыть терминал в папке с docker-compose.yml, ввести команду `docker compose up`  
+2. Открыть терминал в папке с docker-compose.yml, ввести команду `docker compose -p animal-shelter up -d`  
    *(На устройстве должен быть установлен и запущен Docker)*
 
 ### Стек технологий:
