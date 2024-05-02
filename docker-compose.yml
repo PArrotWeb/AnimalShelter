@@ -1,4 +1,4 @@
-﻿version: '1.0.1'
+﻿version: '1.0.2'
 
 services:
   api:
@@ -9,10 +9,12 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "5000:80"
+      - "5003:80"
     volumes:
       - animal-shelter-data:/app/Database/
+      - animal-shelter-wwwroot:/app/wwwroot/
 
 volumes:
   animal-shelter-data:
+  animal-shelter-wwwroot:
     

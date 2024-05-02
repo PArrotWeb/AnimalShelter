@@ -23,6 +23,11 @@ void ConfigureServices()
 	builder.Services.AddEndpointsApiExplorer();
 
 	// Add UploadService
+	var directory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+	if (Directory.Exists(directory) == false)
+	{
+		Directory.CreateDirectory(directory);
+	}
 	builder.Services.AddScoped<IUploadService, UploadService>();
 
 	// Add controllers
