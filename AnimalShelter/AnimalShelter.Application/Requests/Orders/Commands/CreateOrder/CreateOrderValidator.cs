@@ -23,7 +23,7 @@ public class CreateOrderValidator : AbstractValidator<CreateOrderCommand>
 
 		// check if phone is a valid phone number
 		RuleFor(q => q.Phone)
-			.Matches(@"^(\+[0-9]{2-15})$")
+			.Matches(@"^(\+[0-9]{2,15})$")
 			.WithMessage("Phone must be a valid phone number");
 
 		// check if email is empty
